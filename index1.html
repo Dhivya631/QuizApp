@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style1.css">
+    <!-- FontAweome CDN Link for Icons-->
+</head>
+<body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDCwfgIhPkxXsilk3XnlLI2PTFcyWyTBfs",
+      authDomain: "demoapp-d09cf.firebaseapp.com",
+      projectId: "demoapp-d09cf",
+      storageBucket: "demoapp-d09cf.appspot.com",
+      messagingSenderId: "41407862892",
+      appId: "1:41407862892:web:90fc1225c0d631795ba049",
+      measurementId: "G-78QKWCZS4N"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <div class="img">
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Quiz
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index.html">Web Development</a>
+              <a href="index2.html">App Development</a>
+              <a href="index3.html">Java</a>
+            </div>
+          </div>
+        <a href="#feedback">Feedback</a>
+    </div>
+    <div class="section" id="about" > 
+      <div class="about-section">
+        <h1>About</h1>
+      </div>
+      <div class="section1">
+        <h3>Web Development</h3>
+       <p>Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+      </div>
+      <div class="section2">
+        <h3>App Development</h3> 
+        <p>Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones. These software applications are designed to run on mobile devices, such as a smartphone or tablet computer.</p>   
+      </div>
+      <div class="section3">
+        <h3>Java</h3>
+        <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+      </div>
+      <div class="line1"></div>
+      <div class="line2"></div>
+    </div> 
+  </div>
+  <div class="feedback" id="feedback">
+    <h1>Feedback</h1>
+  </div>
+  <div class="container">
+    <form action="feedback.html">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="India">India</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Feedback</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+  <div class="footer">
+        <p><b>Contact: </b>8015167450</p>
+        <p><b>Email </b>dhivya.rajannt@gmail.com</p>
+  </div> 
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+    background-image: url("img/feedback.png");
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+p{
+    text-align: center;
+    font-family: cursive;
+    font-size: larger;
+    color: white;
+    font-style: bolder;
+    padding-top:250px;
+}
